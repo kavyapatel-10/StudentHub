@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="StudentHub Events page">
+<title>StudentHub - Events</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="header-container">
+<a class="logo" href="index.html">StudentHub</a>
+<button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">☰ Menu</button>
+<nav id="main-navigation" class="main-navigation" aria-label="Main navigation"><ul><li><a href="index.html" >Home</a></li><li><a href="about.html" >About</a></li><li><a href="register.html" >Register</a></li><li><a href="login.html" >Login</a></li><li><a href="dashboard.html" >Dashboard</a></li><li><a href="events.html" aria-current="page">Events</a></li><li><a href="profile.html" >Profile</a></li><li><a href="contact.html" >Contact</a></li><li><a href="admin.html" >Admin</a></li><li><a href="faq.html" >FAQ</a></li><li><a href="feedback.html" >Feedback</a></li></ul></nav>
+</div>
+</header>
+<main id="main-content">
+<div class="breadcrumb"><a href="index.html">Home</a> &gt; Events</div>
+<section id="notification" class="notification"><strong>Important:</strong> New StudentHub events have been added. <button id="close-notification" type="button">Dismiss</button></section><button id="theme-button" class="theme-button" type="button">🌙 Dark Mode</button>
+<section><h2>Upcoming Events</h2><div class="card-grid"><article class="card"><h3>Technical Workshop</h3><p>25 September 2026</p><button class="open-modal" type="button">View Details</button></article><article class="card"><h3>Sports Day</h3><p>20 September 2026</p></article><article class="card"><h3>Cultural Fest</h3><p>5 October 2026</p></article></div></section><div id="event-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden><div class="modal-content"><button id="close-modal" class="modal-close" type="button" aria-label="Close">✕</button><h2 id="modal-title">Technical Workshop</h2><p>Learn modern web development technologies.</p></div></div><section><h2>Featured Events</h2><div class="slider"><article class="slide"><h3>Technical Workshop</h3><p>Modern web development.</p></article><article class="slide" hidden><h3>Sports Day</h3><p>Exciting sports activities.</p></article><article class="slide" hidden><h3>Cultural Fest</h3><p>Student creativity and talent.</p></article></div><div class="slider-controls"><button id="previous-slide" type="button">Previous</button><button id="next-slide" type="button">Next</button></div></section>
+</main>
+<footer><p>&copy; 2026 StudentHub. All rights reserved.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

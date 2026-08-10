@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="StudentHub Feedback page">
+<title>StudentHub - Feedback</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="header-container">
+<a class="logo" href="index.html">StudentHub</a>
+<button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">☰ Menu</button>
+<nav id="main-navigation" class="main-navigation" aria-label="Main navigation"><ul><li><a href="index.html" >Home</a></li><li><a href="about.html" >About</a></li><li><a href="register.html" >Register</a></li><li><a href="login.html" >Login</a></li><li><a href="dashboard.html" >Dashboard</a></li><li><a href="events.html" >Events</a></li><li><a href="profile.html" >Profile</a></li><li><a href="contact.html" >Contact</a></li><li><a href="admin.html" >Admin</a></li><li><a href="faq.html" >FAQ</a></li><li><a href="feedback.html" aria-current="page">Feedback</a></li></ul></nav>
+</div>
+</header>
+<main id="main-content">
+<div class="breadcrumb"><a href="index.html">Home</a> &gt; Feedback</div>
+<button id="theme-button" class="theme-button" type="button">🌙 Dark Mode</button>
+<section class="form-container"><h2>Student Feedback</h2><p>Your feedback helps improve StudentHub.</p><form action="#" method="post"><label for="name">Name</label><input id="name" name="name"><label for="email">Email</label><input id="email" name="email" type="email"><label for="rating">Overall Experience</label><select id="rating" name="rating" required><option value="">Select rating</option><option>Excellent</option><option>Very Good</option><option>Good</option><option>Needs Improvement</option></select><label for="comments">Comments</label><textarea id="comments" name="comments" rows="6" required></textarea><button type="submit">Submit Feedback</button></form></section>
+</main>
+<footer><p>&copy; 2026 StudentHub. All rights reserved.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
