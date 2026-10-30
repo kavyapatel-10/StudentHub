@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "category": "General",
+    "question": "What is StudentHub?",
+    "answer": "StudentHub is a centralized student portal for academics, events and campus information."
+  },
+  {
+    "id": 2,
+    "category": "General",
+    "question": "Who can use StudentHub?",
+    "answer": "Any student of the college can create an account and use the portal."
+  },
+  {
+    "id": 3,
+    "category": "General",
+    "question": "Is StudentHub free to use?",
+    "answer": "Yes. The portal is free for all registered students."
+  },
+  {
+    "id": 4,
+    "category": "Account",
+    "question": "How do I register?",
+    "answer": "Open the Register page, fill in the form and accept the terms and conditions."
+  },
+  {
+    "id": 5,
+    "category": "Account",
+    "question": "What should my password contain?",
+    "answer": "At least 8 characters with an uppercase letter, a lowercase letter, a number and a special character."
+  },
+  {
+    "id": 6,
+    "category": "Account",
+    "question": "How do I update my profile?",
+    "answer": "Open the Profile page, edit your details and press Update Profile."
+  },
+  {
+    "id": 7,
+    "category": "Account",
+    "question": "I forgot my password. What should I do?",
+    "answer": "Password recovery will be added in a later practical. For now, contact Student Services."
+  },
+  {
+    "id": 8,
+    "category": "Events",
+    "question": "How can I see upcoming events?",
+    "answer": "Open the Events page. You can search, filter by category and sort the list."
+  },
+  {
+    "id": 9,
+    "category": "Events",
+    "question": "Can I register for an event?",
+    "answer": "Event registration will be added once the database modules are completed."
+  },
+  {
+    "id": 10,
+    "category": "Events",
+    "question": "How often are new events added?",
+    "answer": "Events are updated whenever departments or clubs announce them."
+  },
+  {
+    "id": 11,
+    "category": "Technical",
+    "question": "Which browsers does StudentHub support?",
+    "answer": "Any modern browser such as Chrome, Edge, Firefox or Safari."
+  },
+  {
+    "id": 12,
+    "category": "Technical",
+    "question": "Does StudentHub work on mobile?",
+    "answer": "Yes. The layout is responsive and adapts to phones, tablets and desktops."
+  },
+  {
+    "id": 13,
+    "category": "Technical",
+    "question": "How do I switch to dark mode?",
+    "answer": "Use the theme button on any page. Your choice is remembered on this device."
+  },
+  {
+    "id": 14,
+    "category": "Technical",
+    "question": "Why is the page not loading data?",
+    "answer": "The data files must be opened through a local server such as Live Server or XAMPP, not by double-clicking the file."
+  },
+  {
+    "id": 15,
+    "category": "General",
+    "question": "How can I contact support?",
+    "answer": "Use the Contact page or email support@studenthub.example."
+  }
+]

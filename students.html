@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="StudentHub Students page">
+<title>StudentHub - Students</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="header-container">
+<a class="logo" href="index.html">StudentHub</a>
+<button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">☰ Menu</button>
+<nav id="main-navigation" class="main-navigation" aria-label="Main navigation"><ul><li><a href="index.html" >Home</a></li><li><a href="about.html" >About</a></li><li><a href="register.html" >Register</a></li><li><a href="login.html" >Login</a></li><li><a href="dashboard.html" >Dashboard</a></li><li><a href="events.html" >Events</a></li><li><a href="students.html" aria-current="page">Students</a></li><li><a href="profile.html" >Profile</a></li><li><a href="contact.html" >Contact</a></li><li><a href="admin.html" >Admin</a></li><li><a href="faq.html" >FAQ</a></li><li><a href="feedback.html" >Feedback</a></li></ul></nav>
+</div>
+</header>
+<main id="main-content">
+<div class="breadcrumb"><a href="index.html">Home</a> &gt; Students</div>
+<button id="theme-button" class="theme-button" type="button">🌙 Dark Mode</button>
+<section><h2>Student Directory</h2>
+<section class="toolbar" aria-label="Search and filter">
+<div class="toolbar-search"><label for="search">Search students</label><input id="search" type="search" placeholder="Search by name, email, course or city" autocomplete="off"></div>
+<div><label for="course-filter">Course</label><select id="course-filter"><option value="all">All courses</option></select></div>
+<div><label for="year-filter">Year</label><select id="year-filter"><option value="all">All years</option><option value="1">1st Year</option><option value="2">2nd Year</option><option value="3">3rd Year</option><option value="4">4th Year</option></select></div>
+<div><label for="sort-by">Sort by</label><select id="sort-by"><option value="name-asc">Name (A-Z)</option><option value="name-desc">Name (Z-A)</option><option value="year-asc">Year (low to high)</option><option value="year-desc">Year (high to low)</option></select></div>
+<div><button id="clear-filters" type="button">Clear filters</button></div>
+</section>
+<p id="result-count" class="result-count" aria-live="polite"></p>
+<div id="status" class="status" role="status" hidden></div>
+<div id="students-list" class="card-grid"></div>
+<nav id="pagination" class="pagination" aria-label="Students pagination"></nav></section>
+</main>
+<footer><p>&copy; 2026 StudentHub. All rights reserved.</p></footer>
+<script src="js/script.js"></script>
+<script type="module" src="js/students.js"></script>
+</body>
+</html>

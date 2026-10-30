@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Patel",
+    "email": "aarav.patel@example.com",
+    "course": "CSE - AI & ML",
+    "year": 2,
+    "city": "Vadodara"
+  },
+  {
+    "id": 2,
+    "name": "Diya Shah",
+    "email": "diya.shah@example.com",
+    "course": "Computer Science",
+    "year": 1,
+    "city": "Anand"
+  },
+  {
+    "id": 3,
+    "name": "Rohan Mehta",
+    "email": "rohan.mehta@example.com",
+    "course": "Electronics",
+    "year": 3,
+    "city": "Ahmedabad"
+  },
+  {
+    "id": 4,
+    "name": "Ananya Joshi",
+    "email": "ananya.joshi@example.com",
+    "course": "CSE - AI & ML",
+    "year": 2,
+    "city": "Surat"
+  },
+  {
+    "id": 5,
+    "name": "Kabir Desai",
+    "email": "kabir.desai@example.com",
+    "course": "Computer Science",
+    "year": 4,
+    "city": "Nadiad"
+  },
+  {
+    "id": 6,
+    "name": "Isha Trivedi",
+    "email": "isha.trivedi@example.com",
+    "course": "CSE - AI & ML",
+    "year": 1,
+    "city": "Vadodara"
+  },
+  {
+    "id": 7,
+    "name": "Vivaan Parmar",
+    "email": "vivaan.parmar@example.com",
+    "course": "Electronics",
+    "year": 2,
+    "city": "Rajkot"
+  },
+  {
+    "id": 8,
+    "name": "Riya Chauhan",
+    "email": "riya.chauhan@example.com",
+    "course": "Computer Science",
+    "year": 3,
+    "city": "Anand"
+  },
+  {
+    "id": 9,
+    "name": "Aditya Solanki",
+    "email": "aditya.solanki@example.com",
+    "course": "CSE - AI & ML",
+    "year": 3,
+    "city": "Bharuch"
+  },
+  {
+    "id": 10,
+    "name": "Meera Bhatt",
+    "email": "meera.bhatt@example.com",
+    "course": "Electronics",
+    "year": 1,
+    "city": "Ahmedabad"
+  },
+  {
+    "id": 11,
+    "name": "Karan Vyas",
+    "email": "karan.vyas@example.com",
+    "course": "Computer Science",
+    "year": 2,
+    "city": "Vadodara"
+  },
+  {
+    "id": 12,
+    "name": "Nisha Rathod",
+    "email": "nisha.rathod@example.com",
+    "course": "CSE - AI & ML",
+    "year": 4,
+    "city": "Surat"
+  },
+  {
+    "id": 13,
+    "name": "Harsh Pandya",
+    "email": "harsh.pandya@example.com",
+    "course": "Electronics",
+    "year": 4,
+    "city": "Nadiad"
+  },
+  {
+    "id": 14,
+    "name": "Pooja Thakkar",
+    "email": "pooja.thakkar@example.com",
+    "course": "Computer Science",
+    "year": 1,
+    "city": "Rajkot"
+  },
+  {
+    "id": 15,
+    "name": "Yash Gohil",
+    "email": "yash.gohil@example.com",
+    "course": "CSE - AI & ML",
+    "year": 2,
+    "city": "Anand"
+  }
+]

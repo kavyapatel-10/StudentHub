@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development Bootcamp",
+    "date": "2026-11-05",
+    "category": "Workshop",
+    "venue": "Computer Lab 2",
+    "description": "Hands-on session covering HTML, CSS, JavaScript and PHP basics for beginners."
+  },
+  {
+    "id": 2,
+    "title": "Git and GitHub Workshop",
+    "date": "2026-11-08",
+    "category": "Workshop",
+    "venue": "Computer Lab 1",
+    "description": "Learn version control, commits, branches and how to publish a project on GitHub."
+  },
+  {
+    "id": 3,
+    "title": "Annual Sports Day",
+    "date": "2026-11-12",
+    "category": "Sports",
+    "venue": "College Ground",
+    "description": "Track and field events, relay races and team games for all departments."
+  },
+  {
+    "id": 4,
+    "title": "AI and Machine Learning Seminar",
+    "date": "2026-11-18",
+    "category": "Seminar",
+    "venue": "Main Auditorium",
+    "description": "An industry expert explains how machine learning is used in real products."
+  },
+  {
+    "id": 5,
+    "title": "Inter-College Cricket Tournament",
+    "date": "2026-11-20",
+    "category": "Sports",
+    "venue": "Cricket Ground",
+    "description": "Knockout cricket tournament with teams from nearby colleges."
+  },
+  {
+    "id": 6,
+    "title": "Photography Contest",
+    "date": "2026-11-25",
+    "category": "Cultural",
+    "venue": "Art Gallery",
+    "description": "Submit your best campus photograph and win exciting prizes."
+  },
+  {
+    "id": 7,
+    "title": "Career Guidance Session",
+    "date": "2026-11-30",
+    "category": "Seminar",
+    "venue": "Seminar Hall B",
+    "description": "Placement cell and alumni share tips on internships and off-campus hiring."
+  },
+  {
+    "id": 8,
+    "title": "Tech Quiz Challenge",
+    "date": "2026-12-01",
+    "category": "Technical",
+    "venue": "Seminar Hall A",
+    "description": "Team quiz on programming, computer science fundamentals and current technology."
+  },
+  {
+    "id": 9,
+    "title": "Cultural Fest 2026",
+    "date": "2026-12-05",
+    "category": "Cultural",
+    "venue": "Open Air Theatre",
+    "description": "Music, dance, drama and art performances by students."
+  },
+  {
+    "id": 10,
+    "title": "Blood Donation Camp",
+    "date": "2026-12-08",
+    "category": "Social",
+    "venue": "Medical Room",
+    "description": "Voluntary blood donation camp organised with a local hospital."
+  },
+  {
+    "id": 11,
+    "title": "Hackathon 24",
+    "date": "2026-12-12",
+    "category": "Technical",
+    "venue": "Innovation Lab",
+    "description": "A 24-hour team hackathon to build creative solutions to campus problems."
+  },
+  {
+    "id": 12,
+    "title": "Resume Building Workshop",
+    "date": "2026-12-15",
+    "category": "Workshop",
+    "venue": "Placement Cell",
+    "description": "Learn to write a clear, one-page resume and a strong LinkedIn profile."
+  },
+  {
+    "id": 13,
+    "title": "Annual Day Celebration",
+    "date": "2027-01-10",
+    "category": "Cultural",
+    "venue": "Main Auditorium",
+    "description": "Awards, performances and a look back at the year's achievements."
+  },
+  {
+    "id": 14,
+    "title": "Robotics Expo",
+    "date": "2027-01-18",
+    "category": "Technical",
+    "venue": "Mechanical Block",
+    "description": "Student-built robots and automation projects on display with live demos."
+  },
+  {
+    "id": 15,
+    "title": "Alumni Meet 2027",
+    "date": "2027-02-06",
+    "category": "Social",
+    "venue": "Conference Hall",
+    "description": "Former students return to meet current students and share their journeys."
+  }
+]

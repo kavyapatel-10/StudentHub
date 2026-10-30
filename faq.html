@@ -13,15 +13,24 @@
 <div class="header-container">
 <a class="logo" href="index.html">StudentHub</a>
 <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">☰ Menu</button>
-<nav id="main-navigation" class="main-navigation" aria-label="Main navigation"><ul><li><a href="index.html" >Home</a></li><li><a href="about.html" >About</a></li><li><a href="register.html" >Register</a></li><li><a href="login.html" >Login</a></li><li><a href="dashboard.html" >Dashboard</a></li><li><a href="events.html" >Events</a></li><li><a href="profile.html" >Profile</a></li><li><a href="contact.html" >Contact</a></li><li><a href="admin.html" >Admin</a></li><li><a href="faq.html" aria-current="page">FAQ</a></li><li><a href="feedback.html" >Feedback</a></li></ul></nav>
+<nav id="main-navigation" class="main-navigation" aria-label="Main navigation"><ul><li><a href="index.html" >Home</a></li><li><a href="about.html" >About</a></li><li><a href="register.html" >Register</a></li><li><a href="login.html" >Login</a></li><li><a href="dashboard.html" >Dashboard</a></li><li><a href="events.html" >Events</a></li><li><a href="students.html" >Students</a></li><li><a href="profile.html" >Profile</a></li><li><a href="contact.html" >Contact</a></li><li><a href="admin.html" >Admin</a></li><li><a href="faq.html" aria-current="page">FAQ</a></li><li><a href="feedback.html" >Feedback</a></li></ul></nav>
 </div>
 </header>
 <main id="main-content">
 <div class="breadcrumb"><a href="index.html">Home</a> &gt; FAQ</div>
 <button id="theme-button" class="theme-button" type="button">🌙 Dark Mode</button>
-<section><h2>Frequently Asked Questions</h2><article class="faq-item"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq1">What is StudentHub?</button></h3><div id="faq1" class="faq-answer" hidden>StudentHub is a centralized student portal.</div></article><article class="faq-item"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq2">How do I register?</button></h3><div id="faq2" class="faq-answer" hidden>Visit the Register page and complete the form.</div></article><article class="faq-item"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq3">How do I update my profile?</button></h3><div id="faq3" class="faq-answer" hidden>Open Profile and update your information.</div></article></section>
+<section><h2>Frequently Asked Questions</h2>
+<section class="toolbar" aria-label="Search and filter">
+<div class="toolbar-search"><label for="search">Search questions</label><input id="search" type="search" placeholder="Search by keyword" autocomplete="off"></div>
+<div><label for="category-filter">Category</label><select id="category-filter"><option value="all">All categories</option></select></div>
+<div><button id="clear-filters" type="button">Clear filters</button></div>
+</section>
+<p id="result-count" class="result-count" aria-live="polite"></p>
+<div id="status" class="status" role="status" hidden></div>
+<div id="faq-list"></div></section>
 </main>
 <footer><p>&copy; 2026 StudentHub. All rights reserved.</p></footer>
 <script src="js/script.js"></script>
+<script type="module" src="js/faq.js"></script>
 </body>
 </html>

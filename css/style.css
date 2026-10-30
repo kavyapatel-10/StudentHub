@@ -19,3 +19,28 @@ body.dark-theme .strength-meter{background:#374151}
 body.dark-theme input,body.dark-theme select,body.dark-theme textarea{background:#2b2b2b;color:#f5f5f5}
 body.dark-theme .success-message{background:#14532d;color:#dcfce7}
 @media(prefers-reduced-motion:reduce){#strength-bar{transition:none}}
+
+/* ===== Practical 6: fetch / search / filter / pagination ===== */
+.modal[hidden]{display:none}
+.toolbar{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-bottom:1rem;align-items:end}
+.toolbar label{margin-top:0}
+.toolbar-search{grid-column:1/-1}
+.toolbar button{margin-top:0;width:100%}
+.result-count{margin:.5rem 0 1rem;font-size:.9rem;color:#4b5563}
+.status{padding:1rem;margin-bottom:1rem;border-radius:6px;border-left:5px solid #0056b3;background:#e8f2ff}
+.status-error{border-color:#b91c1c;background:#fee2e2;color:#7f1d1d}
+.status-empty{border-color:#ca8a04;background:#fef9c3;color:#713f12}
+.status button{margin:0 0 0 .5rem;padding:.35rem .8rem}
+.badge{display:inline-block;padding:.15rem .6rem;border-radius:999px;background:#e0ecff;color:#003b73;font-size:.8rem;font-weight:bold}
+.pagination{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:1.5rem}
+.pagination button{margin-top:0;min-width:2.5rem}
+.pagination button[aria-current=page]{background:#fff;color:#003b73;border:2px solid #003b73}
+.pagination button:disabled{opacity:.45;cursor:not-allowed}
+.student-card{text-align:center}
+.avatar{display:grid;place-items:center;width:64px;height:64px;margin:0 auto .75rem;border-radius:50%;background:#003b73;color:#fff;font-size:1.3rem;font-weight:bold}
+body.dark-theme .result-count{color:#d1d5db}
+body.dark-theme .status{background:#1e3a5f;color:#e5efff}
+body.dark-theme .status-error{background:#5f1e1e;color:#fee2e2}
+body.dark-theme .status-empty{background:#5a4a14;color:#fef9c3}
+body.dark-theme .badge{background:#2b3a55;color:#cfe0ff}
+body.dark-theme .pagination button[aria-current=page]{background:#1f1f1f;color:#7db7ff;border-color:#7db7ff}
