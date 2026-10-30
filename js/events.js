@@ -31,9 +31,13 @@ function getVisibleEvents() {
 }
 
 function cardHTML(event) {
-  return '<article class="card">' +
+  const poster = event.poster
+    ? '<img class="poster" src="' + escapeHTML(event.poster) + '" alt="Poster for ' + escapeHTML(event.title) + '" loading="lazy">'
+    : '';
+  const closed = event.status === 'closed' ? ' <span class="badge badge-closed">Closed</span>' : '';
+  return '<article class="card">' + poster +
     '<h3>' + escapeHTML(event.title) + '</h3>' +
-    '<p><span class="badge">' + escapeHTML(event.category) + '</span></p>' +
+    '<p><span class="badge">' + escapeHTML(event.category) + '</span>' + closed + '</p>' +
     '<p><strong>' + formatDate(event.date) + '</strong><br>' + escapeHTML(event.venue) + '</p>' +
     '<button class="details-button" type="button" data-id="' + event.id + '">View Details</button>' +
     '</article>';
@@ -95,13 +99,37 @@ list.addEventListener('click', e => {
   if (button) openDetails(Number(button.dataset.id));
 });
 
-// ---- Load data ----
+// ---- Load data: PHP API -> data/events.json -> last cached copy ----
+const CACHE_KEY = 'studenthub-events-cache';
+
+async function loadEvents() {
+  try {
+    const result = await fetchJSON('api/events.php');
+    localStorage.setItem(CACHE_KEY, JSON.stringify(result.data));   // keep the latest copy for offline-like display
+    return result.data;
+  } catch (apiError) {
+    console.warn('API not available, trying data/events.json', apiError);
+  }
+  try {
+    return await fetchJSON('data/events.json');
+  } catch (fileError) {
+    const cached = localStorage.getItem(CACHE_KEY);
+    if (cached) {
+      setStatus(status, 'empty', 'You appear to be offline. Showing the last saved events.');
+      return JSON.parse(cached);
+    }
+    throw fileError;
+  }
+}
+
 async function init() {
   setStatus(status, 'loading', 'Loading events...');
   try {
-    state.all = await fetchJSON('data/events.json');
+    state.all = await loadEvents();
     fillCategories();
+    const wasOffline = status.classList.contains('status-empty');
     render();
+    if (wasOffline) setStatus(status, 'empty', 'You appear to be offline. Showing the last saved events.');
   } catch (error) {
     console.error(error);
     setStatus(status, 'error',

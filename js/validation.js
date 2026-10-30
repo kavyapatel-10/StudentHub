@@ -5,7 +5,6 @@
 const form = document.querySelector('#register-form');
 
 if (form) {
-  const successBox = document.querySelector('#form-success');
   const strengthBar = document.querySelector('#strength-bar');
   const strengthText = document.querySelector('#strength-text');
 
@@ -112,8 +111,6 @@ if (form) {
   // ---- Submit ----
   form.addEventListener('submit', event => {
     event.preventDefault();
-    successBox.hidden = true;
-
     let firstInvalid = null;
     Object.keys(validators).forEach(id => {
       if (!validateField(id) && !firstInvalid) firstInvalid = id;
@@ -127,16 +124,6 @@ if (form) {
       return;
     }
 
-    successBox.textContent = 'Registration successful! (Frontend validation passed.)';
-    successBox.hidden = false;
-    form.reset();
-    Object.keys(validators).forEach(id => {
-      const input = document.querySelector('#' + id);
-      const errorBox = document.querySelector('#' + id + '-error');
-      if (errorBox) errorBox.textContent = '';
-      if (input) input.classList.remove('valid', 'invalid');
-    });
-    updateStrength();
-    successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    form.submit();   // all checks passed: send the form to register.php (server validates again)
   });
 }
