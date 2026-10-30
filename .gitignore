@@ -1,0 +1,8 @@
+# uploaded posters and stored form data stay on your machine
+uploads/posters/*
+!uploads/posters/.gitkeep
+storage/*.csv
+storage/*.json
+.DS_Store
+Thumbs.db
+.vscode/
